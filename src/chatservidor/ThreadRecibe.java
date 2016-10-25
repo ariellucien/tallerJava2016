@@ -35,7 +35,7 @@ public class ThreadRecibe implements Runnable{
             do
             {
                 mensaje = (String)entrada.readObject();
-                main.mostrarMensaje(mensaje);
+                main.mostrarMensaje(mensaje+"\n");
             }while(!mensaje.equals("Server-> terminate"));
         } catch (IOException ex) {
             

@@ -42,7 +42,7 @@ public class FirstConnection
                 System.out.println("nombre: " + rs.getString(2));
                 
             }
-            
+            con.close();
         } catch (ClassNotFoundException ex) {
             System.out.println("class not found exception");
         } catch (InstantiationException ex) {
